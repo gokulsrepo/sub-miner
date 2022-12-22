@@ -1,4 +1,5 @@
 #!/bin/bash
+figlet -f slant bi66y
 read -p "Enter company name: " company
 read -p "Domain:" domain
 mkdir ~/recon
