@@ -5,6 +5,7 @@ This bash script will collect all the sub-domains passively and give you some us
 
 Required Tools: <br>
 
+anew <br>
 amass <br>
 assetfinder <br>
 httpx <br>
