@@ -1,2 +1,3 @@
 # sub-miner
-Recon at ease
+Recon Automation
+ Usage: Just run ./recon.sh
