@@ -1,15 +1,8 @@
 #!/bin/bash
 figlet -f slant bi66y
 echo "A Recon Automation Tool"
-case $1 in 
- --help | -h) echo "Recon Automation
- Usage: Just run ./recon.sh"
- ;;
-*)
-"Recon Automation
- Usage: Just run ./recon.sh" 
-;;
-esac
+if($1 == -h|--help)
+echo "Usage: Just run ./recon.sh"
 read -p "Enter company name: " company
 read -p "Domain:" domain
 mkdir ~/recon
