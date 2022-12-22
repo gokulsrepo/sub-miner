@@ -1,8 +1,7 @@
 #!/bin/bash
-figlet -f slant bi66y
-echo "A Recon Automation Tool"
-if($1 == -h|--help)
-echo "Usage: Just run ./recon.sh"
+figlet -f slant sub-miner
+echo "A Recon Automation Tool by bi66y"
+
 read -p "Enter company name: " company
 read -p "Domain:" domain
 mkdir ~/recon
@@ -26,6 +25,3 @@ cat live.txt | dnsx -a --resp-only -o ip.txt
 cat ip.txt | nrich - >> nrich.txt
 httpx -l live.txt -p 80,443,8080,3000 -status-code -title -o titles.txt
 httpx -l live.txt --silent -title -mc 403 -o forbidden.txt
-
-
-
