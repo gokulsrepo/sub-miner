@@ -1,4 +1,4 @@
 # sub-miner
-Recon Automation
-\nUsage: Just run ./recon.sh
- \nThis bash script collect all the sub-domains passively and give you some useful details about the live domains
+Recon Automation  <br>
+Usage: Just run ./recon.sh  <br>
+This bash script will collect all the sub-domains passively and give you some useful details about the live domains.
