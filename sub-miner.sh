@@ -1,5 +1,15 @@
 #!/bin/bash
 figlet -f slant bi66y
+echo "A Recon Automation Tool"
+case $1 in 
+ --help | -h) echo "Recon Automation
+ Usage: Just run ./recon.sh"
+ ;;
+*)
+"Recon Automation
+ Usage: Just run ./recon.sh" 
+;;
+esac
 read -p "Enter company name: " company
 read -p "Domain:" domain
 mkdir ~/recon
@@ -24,13 +34,5 @@ cat ip.txt | nrich - >> nrich.txt
 httpx -l live.txt -p 80,443,8080,3000 -status-code -title -o titles.txt
 httpx -l live.txt --silent -title -mc 403 -o forbidden.txt
 
-case $1 in 
- --help | -h) echo "Recon Automation
- Usage: Just run ./recon.sh"
- ;;
-*)
-"Recon Automation
- Usage: Just run ./recon.sh" 
-;;
-esac
+
 
