@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo apt install figlet
 figlet -f slant sub-miner
 echo "A Recon Automation Tool by bi66y"
 
