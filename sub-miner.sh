@@ -5,6 +5,7 @@ echo "A Recon Automation Tool by bi66y"
 
 read -p "Enter company name: " company
 read -p "Domain:" domain
+echo "This will take sometime...have a look at recon folder created at home directory"
 mkdir ~/recon
 mkdir ~/recon/$company
 mkdir ~/recon/$company/$domain
